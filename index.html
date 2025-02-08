@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumo dos meus estudos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="menu-lateral">
+<ul>
+<li><a href="#HTML">HTML</a></li>
+<li><a href="#Links">Links</a></li>
+<li><a href="#img">Imagens e Vídeos</a></li>
+<li><a href="#css">Começando nas CSS's</a></li>
+<li><a href="#caixas">Modelos de Caixas</a></li>
+<li><a href="#flexbox">Flex-Box</a></li>
+</ul>
+</div>
+
+<div class="conteudo">
+
+<!--Conteudo de HTML-->
+
+<div id="HTML">
+<header>
+<h1>Começando no HTML</h1>
+</header>
+
+<!--Começando no HTML-->
+
+<h2>Criando o código base</h2>
+<p>Para começar, ao abrir o Visual Studio Code coloque um ponto de ! (exclamação) e aperte Enter, vai aparecer o seguinte código.</p>
+
+<section class="code-html">
+<code>
+<pre>
+&lt;<span class="azul">DOCTYPE html</span>&gt;
+&lt;<span class="azul">html lang</span>=<span class="ama">"en"</span>&gt;
+&lt;<span class="azul">head</span>&gt;
+&lt;<span class="azul">meta charset</span>=<span class="ama">"UTF-8"</span>&gt;        
+&lt;<span class="azul">meta name</span>=<span class="ama">"viewport"</span> <span class="azul">content</span>=<span class="ama">"width=device-widthinitial-scale=1.0"</span>&gt;
+&lt;<span class="azul">title</span>&gt;Document&lt;/<span class="azul">title</span>&gt;
+&lt;/<span class="azul">head</span>&gt;
+&lt;<span class="azul">body</span>&gt;
+
+&lt;/<span class="azul">body</span>&gt;
+&lt;/<span class="azul">html</span>&gt;
+</pre>
+</code>
+</section>
+
+<ul>
+<li>Devemos mudar o parâmetro Html Lang para &lt;<span class="azul">html lang=</span><span class="ama">"pt-br"</span>&gt;.</li>
+<li>Em <span class="azul">&lt;title&gt;</span> devemos colocar o título da nossa página, que será exibido na aba do navegador.</li>
+<li>Todo o conteúdo da página deverá ser colocado entre a tag <span class="azul">&lt;body&gt;&lt;/body&gt;</span>.</li>
+</ul>
+
+<p>Abaixo temos algumas tag's que podem ser usadas.</p>
+<ul>
+<li>Para colocar uma linha usa &lt;hr&gt;</li>
+<li>Para quebrar a linha &lt;br&gt;</li>
+</ul>
+
+<!--Cimbolos e Emojis-->
+
+<h2>Símbolos e Emoji</h2>
+<ul>
+<li>Para  o símbolo de abre e fecha tag (&lt;&gt;) ser exibido na página, usa-se o código <span class="azul">& l t ;</span> (sem espaço) para abrir e <span class="azul">& g t</span> ; (sem espaço) para fechar. <!--LT= LESS THAN (menor que) / GT= Greather THAN (maior que )--></li>
+
+<li>Para adicionar um comentário usa <span class="lim">&lt; !-- comentário -- &gt;</span> o que estiver escrito entre os traços não será exibido na página. ou use o atalho: <button class="but-tec">CTRL</button> + <button class="but-tec">K</button> + <button class="but-tec">C</button></li>
+
+<li>Para o símbolo de Marca Registrada usa <span class="azul">(& reg)</span> &reg;</li>
+
+<li>Para Copyright <span class="azul">(& copy)</span> &copy;</li>
+<li>Para Trademark <span class="azul">(& trade)</span> &trade;</li>
+<li>Para Delta usa <span class="azul">(& Delta</span> iniciando em maiúsculo<span class="azul">)</span> &Delta;</li>
+<li>Para acesso à mais símbolos acesse o <a href="https://www.w3schools.com/charsets/ref_utf_symbols.asp" target="_blank" rel="external">Misc symbols</a> </li>
+
+</ul>
+
+<!--Emojis-->
+
+<h3>Emoji</h3>
+<p>Para ter acesso ao EmojiPedia(biblioteca de emojis)  clique no <a href="https://emojipedia.org/" target="_blank" rel="external">link</a>.</p>
+<ul>
+<li>Entre no Link e escolha o emoji.</li>
+<li>Clique em informações técnicas e procure o código que começa com U+</li>
+<li>Copie o código sem o U+</li>
+<li>Para colocar o código use <span class="azul">&#x</span class="azul">(e o código) &#X1F432</li>
+</ul>
+
+<!--Favicon-->
+
+<h2>Favicon</h2>
+<p>O Favicon, é um ícone que é exibido na aba do navegador, antes do título da página, deve sempre ser colocado dentro da Tag &lt;<span class="azul">head</span>&gt;</p>
+<ul>
+<li>Para criar o seu Favicon você vai no site <a href="https://favicon.io/" target="_blank" rel="external">favicon.io</a>, nesse site você pode criar seu ícone de favorito e baixar, sempre em formato .ico. </li>
+<li>Para ter acesso a biblioteca de ícones visite o site <a href="https://www.iconarchive.com/" target="_blank" rel="external">icon archive</a>.</li>
+
+<li>Para desenhar seu ícone vai em <a href="https://www.favicon.cc/" target="_blank" rel="external">favicon.cc</a> .</li>
+<li>Após criar o ícone crie a tag <span class="azul">link:Favicon</span> : 
+
+<section class="code-html">
+<code>
+<pre>
+&lt;<span class="azul">link rel</span>=<span class="ama">"shortcut icon"</span> <span class="azul">href</span>=<span class="ama">"favicon.ico"</span> <span class="azul">type</span>=<span class="ama">"image/x-icon"</span>&gt;
+</pre>
+</code>
+</section>
+O Favicon deve estar salvo na sua pasta.
+</li>
+</ul>
+
+<!--Formatação-->
+
+<h2>Formatação</h2>
+
+<ul>
+
+<li>Para usar <em>Itálico</em> use &lt;em&gt;</li>
+<li>Para usar <strong>Negrito</strong> use &lt;strong&gt;</li>
+<li>Para texto <ins>inserido ou sublinhado</ins> use &lt;ins&gt;</li>
+<li>Para texto <del>Excluído</del> use &lt;del&gt; </li>
+<li>Para usar <mark>Marca Texto</mark> use &lt;mark&gt;</li>
+<p>Para mudar a cor use &lt;<span class="azul">mark style</span>=<span class="ama">"background-color: Cor;"</span>&gt;&lt;<span class="azul">/mark</span>&gt;</p>
+<li>Para texto <sup>Sobescrito</sup> use &lt;sup&gt;</li>
+<p>Ex: x<sup>2</sup>+b<sup>5</sup>+c<sup>3</sup>=0</p>
+<li>Para texto <sub>Subescrito</sub> use &lt;sub&gt;</li>
+<p>Ex: Fórmula química do ácido Sulfúrico: H<sub>2</sub>SO<sub>4</sub> </p>
+<li>Para exibir código Fonte use &lt;code&gt; com a tag &lt;pre&gt; dentro:  </li>
+<p>&lt;code&gt;<br>
+&lt;pre&gt;Código&lt;/pre&gt;<br>
+&lt;/code&gt;</p>
+<li>Quando indicar um endereço use &lt;adress&gt;</li>
+<p>EX: <adress>Rua das Acácias 225 - Belo Horizonte - MG</adress></p>
+<li>Para <abbr title="Exemplo de Abreviação">Abreviações</abbr> use &lt;abbr&gt;</li>
+<li>Para citações simples use &lt;q&gt;</li>
+<p>Ex: <q>Só sei que nada sei.</q></p>
+</ul>
+
+<!--listas-->
+
+<h2>Listas</h2>
+
+<ul>
+<li>Para cada item de uma lista use &lt;li&gt;</li>
+</ul>
+
+<h3>listas Ordenadas</h3>
+
+<p>Use a tag &lt;ol&gt; Para criar uma lista ordenada: </p>
+
+<section class="code-html">
+<code>
+<pre>
+<span class="azul">&lt;ol&gt;</span>
+<span class="azul">&lt;li&gt;</span>Arroz<span class="azul">&lt;/li&gt;</span>
+<span class="azul">&lt;li&gt;</span>Café<span class="azul">&lt;/li&gt;</span>
+<span class="azul">&lt;li&gt;</span>Açúcar<span class="azul">&lt;/li&gt;</span>
+<span class="azul">&lt;li&gt;</span>Pão<span class="azul">&lt;/li&gt;</span>
+<span class="azul">&lt;/ol&gt;</span>
+</pre>
+</code>
+</section>
+
+<p>O resultado deve ser exibido assim:</p>
+<ol>
+<li>Arroz</li>
+<li>Café</li>
+<li>Açucar</li>
+<li>Pão</li>
+</ol>
+
+<p>Podemos mudar o tipo do índice com a tag <span class="azul">&lt;type&gt;.</span></p>
+<p>Os tipos aceitos são 1 A a I i</p>
+<ul>
+<li>1 para números</li>
+<li>A (maiusculo) para letras maiúsculas.</li>
+<li>a (minúsculo) para letras minúsculas.</li>
+<li>I (maiúsculo) para núemeros romanos maiúsculos.</li>
+<li>i (minusculo) para números romanos maiúsculos.</li></ul>
+
+<h3>Listas Não Ordenadas</h3>
+
+</ul>
+<p>Para listas não ordenadas use <span class="azul">&lt;ul&gt;</span></p>
+
+<section class="code-html">
+<code>
+<pre>
+<span class="azul">&lt;ul&gt;</span>
+<span class="azul">&lt;li&gt;</span>Arroz<span class="azul">&lt;/li&gt;</span> 
+<span class="azul">&lt;li&gt;</span>Café<span class="azul">&lt;/li&gt;</span> 
+<span class="azul">&lt;li&gt;</span>Açúcar<span class="azul">&lt;/li&gt;</span> 
+<span class="azul">&lt;li&gt;</span>Pão<span class="azul">&lt;/li&gt;</span> 
+<span class="azul">&lt;/ul&gt;</span>
+</pre>
+</code>
+</section>
+
+<p>O resultado deve ser exibido assim:</p>
+
+<ul>
+<li>Arroz</li>
+<li>Café</li>
+<li>Açúcar</li>
+<li>Pão</li>
+</ul>
+<p>Também podemos mudar o tipo do índice com a tag <span class="azul">&lt;type&gt;.</span></p>
+<p>Os tipos aceitos são:</p>
+<ul>
+<li>Disc para um disco preenchido </li>
+<li>Circle para um círculo não preenchido</li>
+<li>Square para um quadrado</li>
+</ul>
+
+<h3>Lista De Definição</h3>
+
+<ul>
+<li>Para criar a lista de definição use a tag <span class="azul">&lt;dl&gt;</span></li>
+<li>Para criar o item use a tag <span class="azul">&lt;dt&gt;</span></li>
+<li>Para criar a descrição use a tag <span class="azul">&lt;dd&gt;</span></li>
+</ul>
+<p>Exemplo:</p>
+
+<section class="code-html">
+<code>
+<pre>
+&lt;<span class="azul">dl</span>&gt;
+&lt;<span class="azul">dt</span>&gt;Arroz&lt;<span class="azul">/dt></span>&gt;
+&lt;<span class="azul">dd</span>&gt;Água, Arroz, óleo, alho, sal&lt;<span class="azul">/dd></span>&gt;
+&lt;<span class="azul">dt</span>&gt;Feijão&lt;<span class="azul">/dt></span>&gt;
+&lt;<span class="azul">dd</span>&gt;Água, Feijão, Óleo, Sal&lt;<span class="azul">/dd></span>&gt;
+&lt;<span class="azul">/dl</span>&gt;
+</pre>
+</code>
+</section>
+
+<p>O resultado deve ser exibido assim:</p>
+
+<dl>
+<dt>Arroz</dt><dd>Água, Arroz, óleo, alho, sal</dd>
+<dt>Feijão</dt><dd>Água, Feijão, Óleo, Sal</dd>
+</dl>
+
+<!--Escondendo uma lista-->
+
+<h3>Escondendo uma lista</h3>
+
+<p>Podemos esconder uma lista com a tag <span class="azul">&lt;details&gt;</span>.</p>
+<p>Para definir o que será exibido usamos a tag <span class="azul">&lt;summary&gt;</span>.</p>
+<p>Exemplo de código:</p>
+
+<section class="code-html">
+<code>
+<pre>
+&lt;<span class="azul">details</span>&gt;
+&lt;<span class="azul">summary</span>&gt;<abbr title="Título que vai ser exibido">Clique aqui para ver a lista</abbr>&lt;<span class="azul">/summary</span>&gt;
+&lt;<span class="azul">ul</span>&gt;
+&lt;<span class="azul">li</span>&gt;Pão&lt;<span class="azul">/li</span>&gt;
+&lt;<span class="azul">li</span>&gt;Café&lt;<span class="azul">/li</span>&gt;
+&lt;<span class="azul">li</span>&gt;Arroz&lt;<span class="azul">/li</span>&gt;
+&lt;<span class="azul">li</span>&gt;Macarrão&lt;<span class="azul">/li</span>&gt;
+&lt;<span class="azul">/ul</span>&gt;
+&lt;<span class="azul">/details</span>&gt;
+</pre>
+</code>
+</section>
+
+<p>O resultado deve ser exibido assim:</p>
+
+<details>
+<summary>Clique aqui para ver a lista</summary>
+<ul>
+<li>Pão</li>
+<li>Café</li>
+<li>Arroz</li>
+<li>Macarrão</li>
+</ul>       
+</details>
+
+<!--Tabelas-->
+
+<h2>Tabelas</h2>
+
+<ul>
+<li>Para definir uma tabela use a tag <span class="azul">&lt;table&gt;</span>.</li>
+<li>Para definir um Cabecalho para a tabela use a tag <span class="azul">&lt;thead&gt;</span>, para definir as linhas do cabeçalho, use a tag <span class="azul">&lt;th&gt;</span>.</li>
+<li>Para definir o Corpo da tabela use a tag <span class="azul">&lt;tbody&gt;</span>.</li>
+<li>Para definir o rodapé da tabela use a tag <span class="azul">&lt;tfoot&gt;</span>.</li>
+<li>Cada linha da tabela é definida pela tag <span class="azul">&lt;tr&gt; </span>(Table Row).</li>
+<li>cada coluna é definida pela tag  <span class="azul">&lt;td&gt;</span>(Dado da Tabela).</li>
+<li>Para definir uma borda para a tabela use a definição na tag, <span class="azul">&lt;table&gt;</span>, <span class="ama">border</span>. É uma definição obsoleta, o ideal é fazer a configuração pelo CSS.</li>    
+</ul>
+
+<p>Exemplo de Código:</p>
+<p>Passe o mouse nos pontilhados para explicação;</p>
+
+<section class="code-html2">
+<code >
+<pre>
+&lt;<span class="azul"><abbr title="Tag de abertura da tabela">table</abbr></span> <span style="color: red"><abbr title="Está em vermelho pois está obsoleta">border</abbr></span>=<span class="ama">"1"</span>&gt;
+&lt;<span class="azul"><abbr title="Tag de abertura do cabeçalho">thead</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Tag para o título de cada coluna do cabeçalho.">th</abbr></span>&gt;Filme&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul">th</span>&gt;Ano de Lançamento&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul">th</span>&gt;Avaliação&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul"><abbr title="Fechamento do cabeçalho da tabela">/thead</abbr></span>&gt;
+
+&lt;<span class="azul"><abbr title="Abertura do Corpo da Tabela">tbody</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Definição de cada linha da tabela">tr</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Dado de cada coluna da tabela">td</abbr></span>&gt;Homem de Ferro&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2008&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;8,9&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/tr</span>&gt;
+
+&lt;<span class="azul">tr</span>&gt;
+&lt;<span class="azul">td</span>&gt;Thor&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2010&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;8,0&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/t</span>r&gt;
+
+&lt;<span class="azul">tr</span>&gt;
+&lt;<span class="azul">td</span>&gt;Vingadores&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2012&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;10&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/tr</span>&gt;
+
+&lt;<span class="azul"><abbr title="Tag de abertura do rodapé">tfoot</abbr></span>&gt;
+&lt;<span class="azul">td</span> <span style="color:aqua"><abbr title="Significa a quantidade de colunas que vai ser ocupado">colspan</abbr></span>=<span class="ama">"3"</span>&gt;Filmes da Marvel&lt;<span class="azul">/td</span>&gt;
+
+&lt; <span class="azul">/tfoot</span> &gt;
+&lt;<span class="azul">/tbody</span> &gt;
+&lt;<span class="azul">/table</span> &gt;
+</pre>
+</code>
+</section>
+
+<p>O resultado deve ser exibido assim:</p>
+
+<table border="1">
+<thead>
+<th>Filme</th>
+<th>Ano de Lançamento</th>
+<th>Avaliação</th>
+</thead>
+
+<tbody>
+<tr>
+<td>Homem de Ferro</td>
+<td>2008</td>
+<td>8,9</td>
+</tr>
+
+<tr>
+<td>Thor</td>
+<td>2010</td>
+<td>8,0</td>
+</tr>
+
+<tr>
+<td>Vingadores</td>
+<td>2012</td>
+<td>10</td>
+</tr>
+
+<tfoot>
+<td colspan="3">Filmes da Marvel</td>
+
+</tfoot>
+</tbody>
+</table>
+
+<!--Formulários-->
+
+<h2>Formulários</h2>
+
+<p>A tag para formulários é a tag <span class="azul">&lt;form&gt;</span></p>
+<p><ul>
+<li>Input: é para o botão;</li>
+<li>Label: é para o que está escrito</li>
+</ul></p>
+
+<section class="code-html">
+<code>
+<pre>
+&lt;<span class="azul"><abbr title="Define uma área ao redor do formuário">fieldset</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Define um nome para o field.">legend</abbr></span>&gt;Informações de contato&lt;<span class="azul">/legend</span>&gt;
+&lt;<span class="azul">form</span>&gt;
+&lt;<span class="azul">label for</span>=<span class="ama">"name"</span>&gt; Nome:&lt;<span class="azul">/label</span>&gt;
+&lt;<span class="azul">input type</span>=<span class="ama">"<abbr title="Tipo de input para o formulário">text</abbr>"</span> <span class="azul">id</span>=<span class="ama">"name"</span> <span class="azul">name</span>=<span class="ama">"name"</span>>&lt;br&gt;
+
+&lt;<span class="azul">label for</span>=<span class="ama">"email"</span>&gt; Email:&lt;<span class="azul">/label</span>&gt;
+&lt;<span class="azul">input type</span>=<span class="ama">"email"</span> <span class="azul">id</span>=<span class="ama">"email"</span> <span class="azul">email</span>=<span class="ama">"email"</span>>&lt;br&gt;                    
+
+&lt;<span class="azul">textarea name</span>=<span class="ama">"comentarios"</span> <span class="azul">id</span>=<span class="ama">"comentarios"</span> <span class="azul"><abbr title="Quantidade de linhas">rows</abbr></span>="4" <span class="azul"><abbr title="Quantidade de colunas"> cols</abbr></span>="50" <span class="azul">
+<abbr title="Texto alternativo que aparece na caixa de diálogo.">placeholder</abbr></span>=<span class="ama">"Digite aqui seus comentários...."</span>&gt;&lt;<span class="azul">/textarea</span>&gt; &lt;<span class="azul">br</span>&gt;
+
+&lt;<span class="azul">button</span> <span style="color:blueviolet"><abbr title="Código em JavaScript">onclick="alert('Feedback Enviado')"</abbr></span>&gt;Envie seu Feedback&lt;<span class="azul">/button</span>&gt;               
+
+&lt;<span class="azul">/form</span>&gt;
+&lt;<span class="azul">/fieldset</span>&gt;
+</section>
+</pre>
+</code>
+</section>
+<p>O resultado que deve ser exibido assim:</p>
+
+<fieldset>
+<legend>Informações de contato</legend>
+<form>
+<label for="name"> Nome:</label>
+<input type="text" id="name" name="name"><br>
+<label for="email"> Email:</label>
+<input type="email" id="email" name="email"> <br>
+<label for="comentarios">Comentários:</label> <br>
+<textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários...."></textarea> <br>
+<button onclick="alert('Feedback Enviado')">Envie seu Feedback</button>               
+
+</form>
+</fieldset>
+</section>            			
+<br>
+
+<section class="code-html">
+<h3><span style="font-weight: bold; color: rgb(228, 228, 236); font-size: 2rem;">INPUT TYPES</span> (tipos de input) no HTML</h3>
+<ul>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"text"</span>&gt; <input type="text" placeholder="Seu texto aqui"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"password"</span>&gt;
+<input type="password" placeholder="Digite sua senha aqui"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"radio"</span>&gt; <input type="radio"><input type="radio"><input type="radio"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"number"</span>&gt; <input type="number" placeholder="digite um número"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"image"</span>&gt; <input type="image"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"checkbox"</span>&gt; <input type="checkbox"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"button"</span>&gt; <input style="height: 20px; width: 30px;" type="button"> <label for="button">clique aqui</label></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"color"</span>&gt; <input type="color"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"email"</span>&gt; <input type="email"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"file"</span>&gt; <input type="file"></li>
+<li>&lt;<span class="azul">input type</span> =<span class="ama">"hidden"</span>&gt; <input type="hidden"> <label for="hidden"> clique aqui</label></li>
+</ul>
+
+
+
+</section>
+
+</div>
+
+<!--links-->
+
+<div id="Links">
+<h1>Colocando links na página</h1>
+
+<h2>Links</h2>
+
+<ul>
+<li>A tag Para link é a <span class="azul">&lt;a&gt;</span></li>
+<p>Exemplo:
+<section class="code-html"><code><pre><span class="azul">&lt;a href</span>=<span class="ama">"youtube.com"&gt;</span>YouTube<span class="azul">&lt;/a&gt;</span></pre></code></section>
+</p>
+
+<p><a href="youtube.com" target="_blank" rel="external">Youtube.com</a></p>
+<li>Sempre que for usar um link externo use <span class="azul">target</span>=<span class="ama">"_blank"</span></li>
+<p>Exemplo:
+<section class="code-html"><code><pre><span class="azul">&lt;a href</span>=<span class="ama">"youtube.com" <span class="azul">target</span>=<span class="ama">"_blank"</span> &gt;</span>YouTube<span class="azul">&lt;/a&gt;</span></pre></code></section>
+Se o link for para o seu próprio site use <span class="azul">target</span>=<span class="ama">"_self"</span>
+</p>
+<li>Use também o <span class="azul">rel<span class="ama">""</span></span></li>
+<p>Exemplo:
+<section class="code-html"><code><pre><span class="azul">&lt;a href</span>=<span class="ama">"youtube.com" <span class="azul">target</span>=<span class="ama">"_blank"</span> <span class="azul">rel<span class="ama">"external"</span></span></li>&gt;</span>YouTube<span class="azul">&lt;/a&gt;</span></pre></code></section></p>
+<p><ul>
+<li>Use <em class="azul">external</em> para um site externo</li>
+<li><em class="azul">Next</em> ou <em class="azul">Prev</em> para o seu próprio site</li>
+<li><em class="azul">Unfollow</em> para sites duvidosos</li>
+</ul></p>
+
+</ul>
+
+<h3>Link para Download</h3>
+<p>Use a mesma tag <span class="azul">&lt;a&gt;</span></p>
+<p>
+Exemplo:
+<section class="code-html">
+<code><pre>&lt;<span class="azul">a href</span>=<ins class="ama"><span class="ama">"Dowwnloads/curriculo Rafael.pdf"</span></ins> <span class="azul">download</span>=<span class="ama">"Dowwnloads/curriculo Rafael.pdf"</span> <span class="azul">
+type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span class="azul">&lt;/a&gt;</span></pre></code></section>
+<a href="downloads/curriculo Rafael.pdf" download="downloads/curriculo Rafael.pdf" type="aplication/pdf">Currículo Rafael</a></p>
+
+
+<p>Para verificar os diferentes tipos de Type, visite <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a></p>
+
+</div>
+
+<!--Imagens-->
+
+<div id="img">
+<h1>Imagens</h1>
+<p>No CSS, o whidth (tamanho) da imagem, deve sempre ter 100%</p>
+<ul>
+<li>Sempre faça 3 tamanhos da imagem e salve na pasta imagens, isso serve para diferentes tamanhos de telas.</li>
+<li>A tag de imagem é <span class="azul">&lt;picture&gt;</span></li>
+<li>Dentro da tag <span class="azul">&lt;picture&gt;</span> usa a tag <span class="azul">&lt;img&gt;</span></li>
+<li>Para definir os tamanhos de imagem, use <span class="azul">&lt;source:media:type&gt;</span> listando os tamanhos das imagens da menor para a maior.</li>
+</ul>
+
+<section class="code-html"> 
+<code>
+<pre>
+<span class="azul">&lt;picture&gt;</span>
+<span class="azul">&lt;source media</span>=<span class="ama">"(<mark>max</mark>-whidth: 750px)"</span> <span class="azul">srcset</span>= <span class="ama">"local do arquivo"</span> <span class="azul">type</span>=<span class="ama">"tipo da imagem"</span>&gt;
+<span class="azul">&lt;source media</span>=<span class="ama">"(<mark>max</mark>-whidth: 1050px)"</span> <span class="azul">srcset</span>= <span class="ama">"local do arquivo"</span> <span class="azul">type</span>=<span class="ama">"tipo da imagem"</span>&gt;
+<span class="azul">&lt;img src</span>= <span class="ama">"local da imagem"</span> <span class="azul">alt</span>= <span class="ama">"texto alternativo"<span><span class="azul">&gt;</span>
+<span class="azul">&lt;picture&gt;</span>
+</pre>
+</code>
+</section>
+
+<ul>
+<li>Sempre modifique o termo em destaque, ele vem por padrão com MIN, coloque Max.</li>
+<li>Sempre atente a ordem do tamanho das imagens, na tag <span class="azul">&lt;img&gt;</span> fica o tamanho original da imagem, que deve ficar na base, depois cololque os tamanhos menores.</li>
+</ul>
+
+<h1>Vídeos</h1>
+
+<p>Para baixar vídeos livre de direitos autorais, use o site <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external"> Pexels</a> ou o <a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a>.</p>
+
+<p>Para incorporar vídeos do <a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a> encontre o vídeo e clique em incorporar, depois é só colar no seu código.</p>
+<p></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5jFJoWegTv8?si=RygoqP6mJOI8E5N6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+<p>Para colocar um vídeo que esteja hospedado localmente usa a tag <span class="azul">&lt;video&gt;</span>
+
+<section class="code-html">
+<code><pre>
+&lt;<span class="azul">video controls width</span>=<span class="ama">"tamanho do vídeo"</span>&gt;<span class="azul">&lt;/video&gt;</span>
+&lt;<span class="azul">source srcset</span>=<span class="ama">"local do vídeo"</span> <span class="azul">type</span>=<span class="ama">"video/formato do vídeo"&gt;</span>
+</pre></code></p>
+</section>
+
+</div>
+
+<!--CSS-->
+
+<div id="css">
+<h1>Começando nas CSS</h1>
+
+<h2>Linear Gradiente (degradê no fundo do site)</h2>
+
+<p>Para criar uma definição global use:</p> 
+
+<section class="code-html">
+<code>
+<pre>
+<span class="ame">*{</span><span class="azul">margin</span> <span class="ama">0;</span>
+<span class="azul">padding</span> <span class="ama">0;</span>
+<span class="azul">box-sizing</span> <span class="ama">border-box;</span>
+<span class="ame">}</span>
+</pre>
+</code>
+</section>
+<p>Onde, margin e padding, zeram todos os espaços que possam existir, facilitando a configuração dos espaços de forma correta, e box-sizing é para facilitar a configuração de caixas.</p>
+
+<p>Para criar um link para as folhas de estilo use a opção <span class="azul">link:css</span> </p>
+<p>Coloque a regra <section class="code-html"><code><span class="rosa">@charset</span> <span class="ame">"UTF8";</span></code></section></p>
+
+<p>Para definir um Background para o Site, use a definição:</p>
+<section class="code-html"><code><pre><span class="azul">background-color</span>: <span class="ama">"defina a cor"</span></pre></code></section>
+
+<p>Para definir um degradê no fundo do site use a definição:</p>
+<section class="code-html"><code><pre><span class="azul">background-image:</span> <span class="lim">linear-gradient</span>(<span class="ama"></span> sentido, <span class="ama">cor1, cor2, cor3</span>);</pre></code></section>
+<p>Você pode definir uma cor, e a ultoma opção ser <span class="ama">transparent</span>, para  a cor ir da definida até a trasnparência.</p>
+<p>Para Extrair as cores de um Gradiente use o site <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="externo">Adobe Color</a>, na opção de Extrair Gradiente.</p>
+<p>Você pode definir a % que uma cor vai ocupar no Graditente, colocando uma % depois da Cor.</p>
+<section class="code-html"><code><pre><span class="azul">background-image:</span> <span class="lim">linear-gradient</span> (<span class="ama">to top</span> (sentido), <span class="ama">cor1 10%, cor2 20%, cor3 70%</span>);</pre></code></section>
+
+<h2>Variáveis</h2>
+
+<p>Crie uma variável para facilitar na estilização do site. Você pode definir variáveis para fontes e cores. a variável sempre deve começar com --(dois traços), depois coloque o nome da variável, ex: cor0. Depois coloque a configuração da variável. Tudo isso deve ficar dentro de um seletor :root.</p>
+
+<section class="code-flex">
+    <code >
+        <pre>
+<span class="ame">:root{</span>
+    <span class="azul">--cor01</span>: <span class="ama">#fffff;</span>
+    <span class="azul">--fonte-padrão</span>: <span class="ama">Arial, Helvetica,
+    sans-serif;</span>
+
+<span class="ame">}</span>
+        </pre>
+    </code>
+</section>
+
+<p>Utilize a variável para as configurações de cores de fonte e background.</p>
+
+
+
+
+<h2>Google Fonts</h2>
+<p>Para usar fontes externas, acesse o <a href="https://fonts.google.com/" target="_blank
+" rel="external">Google-Fonts</a></p>
+<p>Escolha a fonte e clique em <button class="botao-azul">Get Font</button></p>
+<p>Clique em <button class="botao-azul">&lt;&gt; Get embed code</button>, em seguida em @import.</p>
+<p>Copie o código e coloque no <span class="azul">&lt;style&gt;.</p></span>
+<p>Se o nome da classe tiver espaço coloque entre aspas simples ' '
+<section class="code-html"><code><pre><span class="azul">font-family:</span> <span class="ama">'passion one';</span></pre></code></section>
+</p>
+<h2>Fontes</h2>
+
+<p>Para Mudar o estilo da fonte use a definição:
+<section class="code-html"><code><pre><span class="azul">font-family</span>:<span class="ama"> "tipo da fonte"</span>;</pre></code></section>
+
+Sempre coloque mais do que uma combinação de fonte. Ex:
+<section class="code-html"><code><pre><span class="azul">font-family:</span> <span class="ama">Arial, Helvetica, sans-serif;</span></pre></code>
+</section>
+</p>
+<p>Algumas definições de Formatação:
+<ul>
+<li><span class="azul">text-decoration:</span>  <span class="ama">underline;</span> = Para sublinhado.</li>
+<li><span class="azul">text-align:</span>       <span class="ama">rigth, center ou left;</span> = para alinhamento do texto.</li>
+<li><span class="azul">font-size:</span>        <span class="ama">quantidade de pixels;</span> = para definir o tamanho do texto.</li>
+<li><span class="azul">font-style:</span>       <span class="ama">italic;</span> = Para colocar em itálico.</li>
+<li><span class="azul">font-wheight:</span>     <span class="ama">ligther, normal, bold ou bolder;</span> = para definir o peso da fonte (negrito). Nem toda fonte permite essa configuração.</li>
+<li><span class="azul">text-indent:</span>      <span class="ama">quantidade de pixels;</span> = Para definir qual o espaçamento do início do parágrafo.</li>
+<li><span class="azul">border-radious:</span>   <span class="ama">quantidade de pixels;</span> = Para definir uma sombra para o texto.</li>
+<li><span class="azul">box-shadow:</span>       <span class="ama">(qtde de pixel, direito) (qtde de pixel, baixo) (qtde de pixel, trasnparência) cor;</span> = Para adicionar uma sombra. </li>
+</ul>
+</p>
+<h3>Tamanhos de Fontes</h3>
+<p>Medidas Absolutas
+<ul>
+<li>cm- Centímetros</li>
+<li>mm- Milímetros</li>
+<li>in- Polegadas</li>
+<li><mark>px- Pixel</mark></li>
+<li>pt- Ponto</li><br> </ul>          
+</p>
+
+<p>Medidas Relativas
+<ul>
+<li><mark>em- Relativo ao M, maiúsculo</mark></li>
+<li>ex- relativo a altura X</li>
+<li>vw- tamanho relativo da largura da tela</li>
+<li>vh- tamanho relativo a altura da tela</li>
+</ul>
+</p>
+<p>As medidas que estão destacadas são as que recomendadas para uso.</p>
+
+
+<h2>Formatação de Seletores</h2>
+<section class="seletor">
+<code class="ame"><pre>body{<br>}</pre></code>
+<p class="">Exemplo de Seletor.</p>
+</section>
+
+<p><ul>
+<li>Em HTML <span class="ama">id</span> em CSS é #.</li>
+<li>Em HTML <span class="ama">class</span> em CSS é . (ponto).</li>
+<li>Em CSS : (dois pontos) é uma pseudo classe</li>
+<li>Em CSS :: (dois pontos repetidos) é um pseudo elemento</li>
+<li>Em CSS > (símbolo de Maior) é para imdicar o elemento filho.</li>
+<li>Só pode haver 1 tipo de <span class="ama">id</span> por página.</li>
+<li>Para usar duas configurações na mesma classe, separe somente com espaço.</li>
+<section class="code-html"><code><pre><span class="azul">&lt;body class</span>:<span class="ama">"azul ama"</span>&gt;</pre></code></section>
+</ul></p>
+
+<h2>Pseudo Class</h2>
+<ul>
+<li><span class="ama">:hover</span> = Quando passar o mouse por cima do botão, "alguma coisa" irá acontecer.</li>
+</ul>
+<section class="code-html">
+<code>
+<pre>
+<span class="ame">.teste-de-botao{</span>
+<span class="azul">background-color</span> <span class="ama">black;</span>
+<span class="azul">color</span> <span class="ama">white;</span>
+<span class="azul">margin</span> <span class="ama">auto;</span>
+<span class="azul">width</span> <span>100px;</span>
+<span class="azul">height</span> <span>50px;</span>            
+<span class="ame">
+}
+
+.teste-de-botao:hover{</span>
+<span class="azul">background-color:</span> <span class="ama">rgb(248, 248, 141);</span>
+<span class="azul">color</span> <span class="ama">rgb(8, 8, 8);</span>
+<span class="ame">}</span>
+</pre>
+</code>
+</section>
+<p>O resultado deve ser exibido assim, passe o mouse por cima.</p>    
+<button class="teste-de-botao">Teste</button><br><br> 
+
+<h2>Formatação de links com Pseudo Classes.</h2>
+
+<section class="code-html">
+
+<code><pre>
+
+<p class="tit-div-2">CSS</p>
+<span class="azul">&lt;style&gt;</span>
+<span class="ame">a{</span>
+<span class="azul">color</span>: <span class="ama">red;</span>
+<span class="azul">text-decoration</span>: <span class="ama">none;</span>
+<span class="azul">font-weight</span>: <span class="ama">bold</span>;
+<span class="ame">}</span>
+<span class="comentario">/*configuração da tag &lt;a&gt;*/</span>
+<span class="ame">a:visited{</span>
+<span class="azul">color</span>: <span class="ama">yellow;</span>
+<span class="comentario">/*Quando o site for visitado*/</span>
+<span class="ame">}</span>
+<span class="ame">a:hover{</span>
+<span class="azul">text-decoration</span>: <span class="ama">underline;</span>
+<span class="azul">color</span>: <span class="ama">black;</span>
+<span class="comentario">/*quando colocar o mouse em cima*/</span>
+<span class="ame">}</span>
+<span class="ame">a:active{</span>
+<span class="azul">color</span>: <span class="ama">rgb(15, 243, 83);</span>
+<span class="comentario">/*essa config é quando voce clica no mouse em cima do link e segura*/</span>
+<span class="ame">}</span>
+<span class="azul">&lt;/style&gt;</span>
+<p class="tit-div-2">HTML</p>
+<span class="azul">&lt;ul&gt;</span>
+<span class="azul">&lt;li&gt;&lt;a href</span>=<span class="ama">"https://www.youtube.com/"</span> <span class="azul">target</span>=<span class="ama">"_blank"</span> <span class="azul">rel</span>=<span class="ama">"external"</span>&gt;You Tube<span class="azul">&lt;/a>&lt;/li&gt;</span>
+<span class="azul">&lt;li&gt;&lt;a href</span>=<span class="ama">"https://www.facebook.com/"</span> <span class="azul">target</span>=<span class="ama">"_blank"</span> <span class="azul">rel</span>=<span class="ama">"external"</span>&gt;Facebook<span class="azul">&lt;/a>&lt;/li&gt;</span>
+<span class="azul">&lt;li&gt;&lt;a href</span>=<span class="ama">"https://www.instagram.com/"</span> <span class="azul">target</span>=<span class="ama">"_blank"</span> <span class="azul">rel</span>=<span class="ama">"external"</span>&gt;Instagram<span class="azul">&lt;/a>&lt;/li&gt;</span>
+<span class="azul">&lt;/ul&gt;</span>
+</pre></code>
+</section>
+<p>O resultado será exibido asssim:</p>
+
+<section id="links-resultado">
+<ul>
+<li><a class="exemplo" href="https://www.youtube.com/" target="_blank" rel="external">You Tube</a></li>
+<li><a class="exemplo" href="https://www.facebook.com/" target="_blank" rel="external">Facebook</a> </li>
+<li><a class="exemplo" href="https://www.instagram.com/" target="_blank" rel="external">Instagram</a></li>
+</ul>
+</section>
+
+
+<ul>
+
+</div>
+
+<!--Modelos de Caixas-->
+
+<div id="caixas">
+<h1>Modelos de Caixas</h1>
+<ul>
+<li>Altura = height</li>
+<li>largura = whidth</li>
+</ul>
+<ul>
+<li>Box-level, sempre quebra uma linha e ocupa a área total da tela. <ul><li>ex: a tag <span class="azul">&lt;div&gt;</span></li></ul>
+</li>
+<li>Inline-level, não quebra a linha e ocupa somente o espaco do conteúdo. <ul><li>ex: a tag <span class="azul
+">&lt;span&gt;</span></li></ul></do></li>
+</ul>
+
+<h2>Estilo de Bordas</h2>
+<p>Para definir uma borda use a definição em CSS:</p>
+<section class="code-html"><code><pre><span class="azul">border:</span> <span class="lim">Largura</span> <span class="ama">estilo cor;</span></pre></code></section>
+<ul>
+<li>A largura é difinida em pixels</li>
+<li>O estilo é definido em: 
+<ul class="border">
+<li><span class="lim">solid</span>: <span class="b-solida">borda sólida</span></li>
+<li><span class="lim">dashed</span>: <span class="b-tracada">traçada</span></li>
+<li><span class="lim">dotted</span>: <span class="b-pont">pontilhado</span></li>
+<li><span class="lim">double</span>: <span class="b-2">dupla</span></li>
+<li><span class="lim">groove</span>: <span class="b-3"> 3d </span></li>
+</ul></li>
+</ul>
+
+
+</div>   
+
+<!--Flex-Box-->
+
+<div id="flexbox">
+
+<h2>Flex-Box</h2>
+<p>É a forma como são dispostos os itens na página. Ele tem várias propriedades.</p>
+
+<p>Para informar ao HTML que iremos usar o flex-box devemos usar a definição:</p>
+<ul><li>display:flex = Para identificar qual a tag vai ser o container de flexbox.</li></ul>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">display</span>: <span class="ama">flex;</span>
+<span class="ame">}</span>
+</pre></code>
+</section>
+
+<h3>flex-direction:</h3> 
+<p>Para identificar qual vai ser o eixo principal e perpendicular:</p>
+
+<ul>
+<li>Row - alinha todos os elementos na hotizontal</li>
+</ul>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-direction</span>: <span class="ama">row;</span>
+<span class="ame">}</span>
+</pre></code>
+</section>
+
+<section>
+<span class="container1" style="display: flex;flex-direction: row;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-direction</span>: <span class="ama">row-reverse;</span>
+<span class="ame">}</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;flex-direction: row-reverse;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<ul>
+<li>
+Column - alinha os itens na vertical
+</li>
+</ul>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-direction</span>: <span class="ama">column;</span>
+<span class="ame">}</span>
+</pre></code>
+</section>
+<span class="container1" style="display: flex;flex-direction: column;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-direction</span>: <span class="ama">column-reverse;</span>
+<span class="ame">}</span>
+</pre></code>
+</section>        
+<span class="container1" style="display: flex;flex-direction: column-reverse;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+</section>
+
+<h3>justify-content</h3>
+<p>flex-start = para alinhar os itens no eixo principal.</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">justify-content</span>: <span class="ama">flex-start;</span>
+<span class="ame">}</span>
+<span class="lim">
+/*para alinhar os itens da
+esquerda para a direita*/
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;justify-content: flex-start; background-color: blanchedalmond; width: 500px;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>flex-end = para alinhar os itens no eixo principal de forma reversa</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">justify-content</span>: <span class="ama">flex-end;</span>
+<span class="ame">}</span>
+<span class="lim">
+/*para alinhar os itens da
+direita para a esquerda*/
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;justify-content: flex-end; background-color: blanchedalmond; width: 500px;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>center = para alinhar os itens ao centro</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">justify-content</span>: <span class="ama">center;</span>
+<span class="ame">}</span>
+<span class="lim">
+/*para alinhar os itens 
+ao centro*/
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;justify-content: center; background-color: blanchedalmond; width: 500px;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>space-between - para colocar um espaço entre os itens do meio</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">justify-content</span>: <span class="ama">space-between;</span>
+<span class="ame">}</span>
+<span class="lim">
+/*para colocar espaco entre 
+os itens do meio*/
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;justify-content: space-between; background-color: blanchedalmond; width: 500px;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>space-around = para colocar um espaço entre todos os itens</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">justify-content</span>: <span class="ama">space-sround;</span>
+<span class="ame">}</span>
+<span class="lim">
+/*para colocar espaco entre 
+todos os itens*/
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex;justify-content: space-around; background-color: blanchedalmond; width: 500px;">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<h3>align-itens</h3>
+<p>Para alinhar os itens no eixo perpendicular</p>
+
+<p>flex-start = alinha os itens no início da box</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">align-itens</span>: <span class="ama">flex-start;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-items: flex-start; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+<p>flex-end = alinha os itens na base da página</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">align-itens</span>: <span class="ama">flex-end;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-items: flex-end; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>center = alinha itens ao centro</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">align-itens</span>: <span class="ama">center;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-items: center; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+</span>
+
+<p>baseline - alinha a base das fontes</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">align-itens</span>: <span class="ama">baseline;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-items: baseline; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1" style="font-size: 2em;">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3" style="font-size: 3em;">3</div>
+</span>
+
+<h3>Flex-wrap</h3>
+
+<p>Quebra de linha de elementos, por padrão ele vem com <span class="ame">flex-wrap: nowrap;</span></p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">nowrap;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+
+<span class="container1" style="display: flex; align-items: center; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+<p> wrap: quebra de linha</p>
+
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-items: center; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>wrap-reverse: quebra de linha para cima.</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap-reverse;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+
+<span class="container1" style="display: flex; align-items: center; flex-wrap: wrap-reverse; background-color: blanchedalmond; width: 500px; height:200px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+
+<h3>align-content</h3>
+
+<p>alinhamento de itens na vertical</p>
+
+<p>flex-start</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">align-content</span>: <span class="ama">flex-start;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-content: flex-start; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>flex-end</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">align-content</span>: <span class="ama">flex-end;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-content: flex-end; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>center</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">align-content</span>: <span class="ama">center;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-content: center; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>space-between</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">align-content</span>: <span class="ama">space-between;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-content: space-between; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>space-around</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">align-content</span>: <span class="ama">space-sround;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; align-content: space-around; flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<h3>Gap, row-gap (distância entre linhas) e column-gap (distância entre colunas)</h3>
+
+<p>Espaço entre os elementos</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">gap</span>: <span class="ama">30px;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; gap: 30px;  flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:300px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">gap</span>: <span class="ama">70px;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; gap: 70px;  flex-wrap: wrap; background-color: blanchedalmond; width: 500px; height:900px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+<div class="bloco-2">11</div>
+<div class="bloco-3">12</div>
+<div class="bloco-1">13</div>
+<div class="bloco-2">14</div>
+<div class="bloco-3">15</div>
+<div class="bloco-1">16</div>
+<div class="bloco-2">17</div>
+<div class="bloco-3">18</div>
+
+</span>
+
+<p>Podemos definir dois valores para o gap, ordem linha e depois colunas.</p>
+
+<section class="code-flex">
+<code ><pre>
+<span class="ame">.container{</span>
+<span class="azul">flex-wrap</span>: <span class="ama">wrap;</span>   
+<span class="azul">gap</span>: <span class="ama">10px 30px;</span>
+<span class="ame">}</span>
+<span class="lim">
+</span>
+</pre></code>
+</section>
+
+<span class="container1" style="display: flex; gap: 10px 20px;  flex-wrap: wrap; background-color: blanchedalmond; width: 400px; height:150px">
+<div class="bloco-1">1</div>
+<div class="bloco-2">2</div>
+<div class="bloco-3">3</div>
+<div class="bloco-1">4</div>
+<div class="bloco-2">5</div>
+<div class="bloco-3">6</div>
+<div class="bloco-1">7</div>
+<div class="bloco-2">8</div>
+<div class="bloco-3">9</div>
+<div class="bloco-1">10</div>
+
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
