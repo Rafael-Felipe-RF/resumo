@@ -40,6 +40,14 @@ header{
     text-align: center;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;   
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 0.7rem;
+    background-image: linear-gradient(to right, #cdd19952, transparent);
+}
+
 
 h1{
     
