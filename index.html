@@ -579,7 +579,7 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
         <p>Para criar um link para as folhas de estilo use a opção <span class="azul">link:css</span> </p>
         <p>Coloque a regra <section class="code-html"><code><span class="rosa">@charset</span> <span class="ame">"UTF8";</span></code></section></p>
 
-        <p>Para definir um Background para o Site, use a definição:</p>
+        <p>Para definir uma cor para o Background do Site, use a definição:</p>
 
         <section class="code-html">
             <code>
@@ -599,7 +599,7 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
         </code>
     </section>
 
-        <p>Você pode definir uma cor, e a ultoma opção ser <span class="ama">transparent</span>, para  a cor ir da definida até a trasnparência.</p>
+        <p>Você pode definir uma cor, e a última opção ser <span class="ama">transparent</span>, para  a cor ir da definida até a trasnparência.</p>
         <p>Para Extrair as cores de um Gradiente use o site <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="externo">Adobe Color</a>, na opção de Extrair Gradiente.</p>
         <p>Você pode definir a % que uma cor vai ocupar no Graditente, colocando uma % depois da Cor.</p>
     <section class="code-html">
@@ -611,6 +611,20 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
         </code>
     </section>
 
+        <h2>Para definir uma imagem como fundo do site, ou de uma <span class="azul">&lt;div&gt;</span></h2>
+            <p>Para usar uma imagem de fundo do site, ou de uma <span class="azul">&lt;div&gt;</span> específica, voce usa a propriedade:</p>
+
+            <section class="code-html">
+                <code>
+                    <pre>
+<span class="azul">background-image:</span>url ('local da imagem');
+<span class="azul">background-size:</span> <span class="ama">defina valor 1 / defina valor 2;</span>
+<span class="azul">background-repeat:</span> <span class="ama">para definir se a imagem vai se repetir ou não;</span>
+<span class="azul">background-position:</span> <span class="ama">posição 1(coluna) / posição 2(linha);</span>
+                    </pre>
+                </code>
+            </section>
+
     <h2>Variáveis</h2>
 
         <p>Crie uma variável para facilitar na estilização do site. Você pode definir variáveis para fontes e cores. a variável sempre deve começar com --(dois traços), depois coloque o nome da variável, ex: cor0. Depois coloque a configuração da variável. Tudo isso deve ficar dentro de um seletor :root.</p>
@@ -620,9 +634,8 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
             <pre>
 <span class="ame">:root{</span>
 <span class="azul">--cor01</span>: <span class="ama">#fffff;</span>
-<span class="azul">--fonte-padrão</span>: <span class="ama">Arial, Helvetica,
-sans-serif;</span>
-
+<span class="azul">--fonte-padrão</span>: <span class="ama">Arial, 
+Helvetica, sans-serif;</span>
 <span class="ame">}</span>
             </pre>
         </code>
