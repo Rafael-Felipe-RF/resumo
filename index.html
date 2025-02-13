@@ -556,7 +556,7 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
 
 <!--CSS-->
 
-    <div id="css">
+<div id="css">
     <h1>Começando nas CSS</h1>
 
         <h2>Linear Gradiente (degradê no fundo do site)</h2>
@@ -621,6 +621,8 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
 <span class="azul">background-size:</span> <span class="ama">defina valor 1 / defina valor 2;</span>
 <span class="azul">background-repeat:</span> <span class="ama">para definir se a imagem vai se repetir ou não;</span>
 <span class="azul">background-position:</span> <span class="ama">posição 1(coluna) / posição 2(linha);</span>
+<span class="azul">background-size:</span> <span class="ama">cover (para a imagem ocupar a tela inteira);</span>
+<span class="azul">background-attchment:</span> <span class="ama">fixed (para a imagem ficar fixa na tela);</span>
                     </pre>
                 </code>
             </section>
@@ -849,8 +851,46 @@ Helvetica, sans-serif;</span>
                         </ul>
                 </ul>
 
+        <h2>Como Centralizar um elemento</h2>
+                <p>Esse elemento deve estar sempre dentro de um <span style="font-style: italic;">container</span>, um elemento dntro de outro.</p>
+
+                <section class="code-html">
+                    <code>
+                        <pre>
+<span class="azul">&lt;style&gt;</span>
+    <abbr title="o #container, é o elemento pai"><span class="ame">#container{</span></abbr>
+        <span class="azul">height:</span> <span class="ama">96vh;</span>
+        <span class="azul">background-color:</span> <span class="ama">blueviolet;</span>
+        <span class="azul">padding:</span> <span class="ama">10px;</span>
+        <abbr title="o padrão de todo elemento é position: relative"><span class="azul">position</span>: <span class="ama">relative;</span></abbr>
+        <span class="azul">background-image:</span> <span class="ama">url(imagens/target001.png);</span>
+        <span class="azul">background-size:</span> <span class="ama">100% 100%;</span>
+    <span class="ame">}</span>
+
+    <abbr title="o #conteudo, é o elemento filho."><span class="ame">#conteudo{</span></abbr>
+        <abbr title="essa definição é para poder aplicar transformação"><span class="azul">position:</span> <span class="ama">absolute;</span></abbr>
+        <abbr title="Para poder movimentar a caixa na horizontal"><span class="azul">left:</span> <span class="ama">50%;</span></abbr>
+        <abbr title="Para poder movimentar a caixa na vertical"><span class="azul">top:</span> <span class="ama">50%;</span></abbr>
+        <abbr title="Para colocar a caixa no centro, no eixo vertical e horizontal"><span class="azul">transform:</span> <span class="ama">translate(-50%, -50%);</span></abbr>
+
+        <span class="azul">height:</span> <span class="ama"> 200px;</span>
+        <span class="azul">width:</span> <span class="ama"> 400px;</span>
+        <span class="azul">background-color:</span> <span class="ama"> yellow;</span>
+        <span class="azul">background-size:</span> <span class="ama"> 100% 100%;</span>
+        <span class="azul">background-image:</span> <span class="ama"> url(imagens/target001.png);</span>
+    <span class="ame">}</span>
+
+<span class="azul">&lt;/style&gt;</span>
+
+                        </pre>
+                    </code>
+                </section>
+
+<p>Clique no link para ver um exemplo de centralização de caixa. <a href="exemplo-de-caixa.html" target="_blank" rel="external">Clique Aqui</a></p>
+
 
 </div>   
+
 
 <!--Flex-Box-->
 
