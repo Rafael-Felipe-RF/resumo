@@ -13,9 +13,11 @@
             <li><a href="#HTML">HTML</a></li>
             <li><a href="#Links">Links</a></li>
             <li><a href="#img">Imagens e Vídeos</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
             <li><a href="#css">Começando nas CSS's</a></li>
             <li><a href="#caixas">Modelos de Caixas</a></li>
             <li><a href="#flexbox">Flex-Box</a></li>
+            
         </ul>
     </div>
 
@@ -276,97 +278,9 @@
                     </ul>       
             </details>
 
-<!--Tabelas-->
 
-    <h2>Tabelas</h2>
 
-        <ul>
-            <li>Para definir uma tabela use a tag <span class="azul">&lt;table&gt;</span>.</li>
-            <li>Para definir um Cabecalho para a tabela use a tag <span class="azul">&lt;thead&gt;</span>, para definir as linhas do cabeçalho, use a tag <span class="azul">&lt;th&gt;</span>.</li>
-            <li>Para definir o Corpo da tabela use a tag <span class="azul">&lt;tbody&gt;</span>.</li>
-            <li>Para definir o rodapé da tabela use a tag <span class="azul">&lt;tfoot&gt;</span>.</li>
-            <li>Cada linha da tabela é definida pela tag <span class="azul">&lt;tr&gt; </span>(Table Row).</li>
-            <li>cada coluna é definida pela tag  <span class="azul">&lt;td&gt;</span>(Dado da Tabela).</li>
-            <li>Para definir uma borda para a tabela use a definição na tag, <span class="azul">&lt;table&gt;</span>, <span class="ama">border</span>. É uma definição obsoleta, o ideal é fazer a configuração pelo CSS.</li>    
-        </ul>
-
-            <p>Exemplo de Código:</p>
-            <p>Passe o mouse nos pontilhados para explicação;</p>
-
-        <section class="code-html2">
-            <code >
-                <pre>
-&lt;<span class="azul"><abbr title="Tag de abertura da tabela">table</abbr></span> <span style="color: red"><abbr title="Está em vermelho pois está obsoleta">border</abbr></span>=<span class="ama">"1"</span>&gt;
-&lt;<span class="azul"><abbr title="Tag de abertura do cabeçalho">thead</abbr></span>&gt;
-&lt;<span class="azul"><abbr title="Tag para o título de cada coluna do cabeçalho.">th</abbr></span>&gt;Filme&lt;<span class="azul">/th</span>&gt;
-&lt;<span class="azul">th</span>&gt;Ano de Lançamento&lt;<span class="azul">/th</span>&gt;
-&lt;<span class="azul">th</span>&gt;Avaliação&lt;<span class="azul">/th</span>&gt;
-&lt;<span class="azul"><abbr title="Fechamento do cabeçalho da tabela">/thead</abbr></span>&gt;
-
-&lt;<span class="azul"><abbr title="Abertura do Corpo da Tabela">tbody</abbr></span>&gt;
-&lt;<span class="azul"><abbr title="Definição de cada linha da tabela">tr</abbr></span>&gt;
-&lt;<span class="azul"><abbr title="Dado de cada coluna da tabela">td</abbr></span>&gt;Homem de Ferro&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;2008&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;8,9&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">/tr</span>&gt;
-
-&lt;<span class="azul">tr</span>&gt;
-&lt;<span class="azul">td</span>&gt;Thor&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;2010&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;8,0&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">/t</span>r&gt;
-
-&lt;<span class="azul">tr</span>&gt;
-&lt;<span class="azul">td</span>&gt;Vingadores&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;2012&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">td</span>&gt;10&lt;<span class="azul">/td</span>&gt;
-&lt;<span class="azul">/tr</span>&gt;
-
-&lt;<span class="azul"><abbr title="Tag de abertura do rodapé">tfoot</abbr></span>&gt;
-&lt;<span class="azul">td</span> <span style="color:aqua"><abbr title="Significa a quantidade de colunas que vai ser ocupado">colspan</abbr></span>=<span class="ama">"3"</span>&gt;Filmes da Marvel&lt;<span class="azul">/td</span>&gt;
-
-&lt; <span class="azul">/tfoot</span> &gt;
-&lt;<span class="azul">/tbody</span> &gt;
-&lt;<span class="azul">/table</span> &gt;
-                </pre>
-            </code>
-        </section>
-
-    <p>O resultado deve ser exibido assim:</p>
-
-        <table border="1">
-            <thead>
-                <th>Filme</th>
-                <th>Ano de Lançamento</th>
-                <th>Avaliação</th>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Homem de Ferro</td>
-                    <td>2008</td>
-                    <td>8,9</td>
-                </tr>
-
-                <tr>
-                    <td>Thor</td>
-                    <td>2010</td>
-                    <td>8,0</td>
-                </tr>
-
-                <tr>
-                    <td>Vingadores</td>
-                    <td>2012</td>
-                    <td>10</td>
-                </tr>
-
-            <tfoot>
-                <td colspan="3">Filmes da Marvel</td>
-
-            </tfoot>
-            </tbody>
-        </table>
-
+    
 <!--Formulários-->
 
     <h2>Formulários</h2>
@@ -554,6 +468,100 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
 
 </div>
 
+<!--Tabelas-->
+
+<div id="tabelas">
+    <h2>Tabelas</h2>
+
+        <ul>
+            <li>Para definir uma tabela use a tag <span class="azul">&lt;table&gt;</span>.</li>
+            <li>Para definir um Cabecalho para a tabela use a tag <span class="azul">&lt;thead&gt;</span>, para definir as linhas do cabeçalho, use a tag <span class="azul">&lt;th&gt;</span>.</li>
+            <li>Para definir o Corpo da tabela use a tag <span class="azul">&lt;tbody&gt;</span>.</li>
+            <li>Para definir o rodapé da tabela use a tag <span class="azul">&lt;tfoot&gt;</span>.</li>
+            <li>Cada linha da tabela é definida pela tag <span class="azul">&lt;tr&gt; </span>(Table Row).</li>
+            <li>cada coluna é definida pela tag  <span class="azul">&lt;td&gt;</span>(Dado da Tabela).</li>
+            <li>Para definir uma borda para a tabela use a definição na tag, <span class="azul">&lt;table&gt;</span>, <span class="ama">border</span>. É uma definição obsoleta, o ideal é fazer a configuração pelo CSS.</li>    
+        </ul>
+
+            <p>Exemplo de Código:</p>
+            <p>Passe o mouse nos pontilhados para explicação;</p>
+
+        <section class="code-html2">
+            <code >
+                <pre>
+&lt;<span class="azul"><abbr title="Tag de abertura da tabela">table</abbr></span> <span style="color: red"><abbr title="Está em vermelho pois está obsoleta">border</abbr></span>=<span class="ama">"1"</span>&gt;
+&lt;<span class="azul"><abbr title="Tag de abertura do cabeçalho">thead</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Tag para o título de cada coluna do cabeçalho.">th</abbr></span>&gt;Filme&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul">th</span>&gt;Ano de Lançamento&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul">th</span>&gt;Avaliação&lt;<span class="azul">/th</span>&gt;
+&lt;<span class="azul"><abbr title="Fechamento do cabeçalho da tabela">/thead</abbr></span>&gt;
+
+&lt;<span class="azul"><abbr title="Abertura do Corpo da Tabela">tbody</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Definição de cada linha da tabela">tr</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Dado de cada coluna da tabela">td</abbr></span>&gt;Homem de Ferro&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2008&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;8,9&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/tr</span>&gt;
+
+&lt;<span class="azul">tr</span>&gt;
+&lt;<span class="azul">td</span>&gt;Thor&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2010&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;8,0&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/t</span>r&gt;
+
+&lt;<span class="azul">tr</span>&gt;
+&lt;<span class="azul">td</span>&gt;Vingadores&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;2012&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">td</span>&gt;10&lt;<span class="azul">/td</span>&gt;
+&lt;<span class="azul">/tr</span>&gt;
+
+&lt;<span class="azul"><abbr title="Tag de abertura do rodapé">tfoot</abbr></span>&gt;
+&lt;<span class="azul">td</span> <span style="color:aqua"><abbr title="Significa a quantidade de colunas que vai ser ocupado">colspan</abbr></span>=<span class="ama">"3"</span>&gt;Filmes da Marvel&lt;<span class="azul">/td</span>&gt;
+
+&lt; <span class="azul">/tfoot</span> &gt;
+&lt;<span class="azul">/tbody</span> &gt;
+&lt;<span class="azul">/table</span> &gt;
+                </pre>
+            </code>
+        </section>
+
+    <p>O resultado deve ser exibido assim:</p>
+
+        <table border="1">
+            <thead>
+                <th>Filme</th>
+                <th>Ano de Lançamento</th>
+                <th>Avaliação</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Homem de Ferro</td>
+                    <td>2008</td>
+                    <td>8,9</td>
+                </tr>
+
+                <tr>
+                    <td>Thor</td>
+                    <td>2010</td>
+                    <td>8,0</td>
+                </tr>
+
+                <tr>
+                    <td>Vingadores</td>
+                    <td>2012</td>
+                    <td>10</td>
+                </tr>
+
+            <tfoot>
+                <td colspan="3">Filmes da Marvel</td>
+
+            </tfoot>
+            </tbody>
+        </table>
+
+</div>
+
 <!--CSS-->
 
 <div id="css">
@@ -693,6 +701,9 @@ Helvetica, sans-serif;</span>
             <li><span class="azul">text-indent:</span><span class="ama">quantidade de pixels;</span> = Para definir qual o espaçamento do início do parágrafo.</li>
             <li><span class="azul">border-radious:</span><span class="ama">quantidade de pixels;</span> = Para definir uma sombra para o texto.</li>
             <li><span class="azul">box-shadow:</span><span class="ama">(qtde de pixel, direito) (qtde de pixel, baixo) (qtde de pixel, trasnparência) cor;</span> = Para adicionar uma sombra. </li>
+            <li><span class="azul">text-transform</span>: <span class="ama">uppercase;</span> = Transforma todas as letras em maiúsculo.</li>
+            <li><span class="azul">font-variant:</span> <span class="ama">small caps;</span> = Para textos maiúsculos, coloca a primeira letra um pouco maior.</li>
+            <li><span class="azul">line-heigth</span>: <span class="ama">(medida)</span> = para dar espaço entre as linhas.</li>
         </ul>
     </p>
         <h3>Tamanhos de Fontes</h3>
