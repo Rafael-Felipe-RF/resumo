@@ -560,6 +560,36 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
             </tbody>
         </table>
 
+        <p>Para definir um efeito zebrado na tabela, utiliza uma Pseudo classe.</p>
+
+        <section class="code-html">
+            <code>
+                <pre>
+<span class="ame">tbody tr:nth-child(</span>2n<span class="ame">){</span>
+    <span class="azul">background-color</span>: <span class="ama"> Defina uma cor</span>;
+<span class="ame">}</span>
+                </pre>
+            </code>
+        </section>
+        <p>Para intervalos de 2 em 2, ao invéz de usar um número, use <span class="ame">ODD</span>, (Par) ou <span class="ame">EVEN</span>, (Ímpar)</p>
+
+        <h3>Para fixar o cabeçalho da tabela no topo da página, serve para tabelas grandes.</h3>
+
+        <p>A tabela tem que ter nas CSS's a <strong><span class="azul">position</span>: <span class="ama">relative;</span></strong></p>
+
+        <section class="code-html">
+            <code>
+                <pre>
+<span class="ame">thead > tr > th{</span>
+<span class="azul">position</span>: <span class="ama">sticky;</span>
+<span class="azul">top</span>: <span class="ama"
+a>0</span>;
+<span><span class="azul">background-color</span>: <span class="ama">"defina uma cor"(a mesma do Thead);</span>
+<span class="ame">}</span>
+                </pre>
+            </code>
+        </section>
+
 </div>
 
 <!--CSS-->
