@@ -573,7 +573,7 @@ type</span>=<span class="ama">"aplication/pdf"</span>&gt;Currículo Rafael<span 
         </section>
         <p>Para intervalos de 2 em 2, ao invéz de usar um número, use <span class="ame">ODD</span>, (Par) ou <span class="ame">EVEN</span>, (Ímpar)</p>
 
-        <h3>Para fixar o cabeçalho da tabela no topo da página, serve para tabelas grandes.</h3>
+        <p>Para fixar o cabeçalho da tabela no topo da página, serve para tabelas grandes.</p>
 
         <p>A tabela tem que ter nas CSS's a <strong><span class="azul">position</span>: <span class="ama">relative;</span></strong></p>
 
@@ -589,6 +589,41 @@ a>0</span>;
                 </pre>
             </code>
         </section>
+
+    <p>Para configurar uma coluna especifica usa a tag do HTML <span class="azul">&lt;colgroup&gt;</span></p>
+
+    <section class="code-html">
+        <code>
+            <pre>
+                
+<span class="azul">&lt;colgroup&gt;</span>
+    <span class="azul">&lt;col class</span>=<span class="ama">"nome"</span>&gt;
+    <span class="azul">&lt;col class</span>=<span class="ama">"sexo"</span>&gt;
+    <span class="azul">&lt;col class</span>=<span class="ama">"idade"</span>&gt;
+    <span class="azul">&lt;col class</span>=<span class="ama">"profissao"</span>&gt;
+<span class="azul">&lt;/colgroup&gt;</span>
+            </pre>
+        </code>
+    </section>
+
+    <p>Para fazer a tabela ficar mais responsiva usa a definição <span class="azul">overflow-x</span></p>
+
+    <section class="code-html">
+        <code>
+            <pre>
+<p>No Html, envelopa a tabela em uma Caixa (div ou section)</p>
+&lt;<span class="azul">div id</span>=<span class="ama">"container"</span>&gt;
+    &lt;<span class="azul">table</span>&gt;...
+    &lt;<span class="azul">/table</span>&gt;
+&lt;<span class="azul">/div</span>&gt;
+
+<p>Nas CSS's coloque a definição:</p>
+<span class="ame">#container{</span>
+<span class="azul">overflow-x</span>: <span class="ama">auto;</span>
+<span class="ame">}</span>   
+            </pre>
+        </code>
+    </section>
 
 </div>
 
