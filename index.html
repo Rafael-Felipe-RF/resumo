@@ -17,6 +17,7 @@
             <li><a href="#css">Começando nas CSS's</a></li>
             <li><a href="#caixas">Modelos de Caixas</a></li>
             <li><a href="#flexbox">Flex-Box</a></li>
+            <li><a href="#formularios">Formulários</a></li>
             
         </ul>
     </div>
@@ -277,71 +278,6 @@
                         <li>Macarrão</li>
                     </ul>       
             </details>
-
-
-
-    
-<!--Formulários-->
-
-    <h2>Formulários</h2>
-
-    <p>A tag para formulários é a tag <span class="azul">&lt;form&gt;</span></p>
-    <ul>
-        <li>Input: é para o botão;</li>
-        <li>Label: é para o que está escrito</li>
-    </ul>
-
-    <section class="code-html">
-        <code>
-            <pre>
-&lt;<span class="azul"><abbr title="Define uma área ao redor do formuário">fieldset</abbr></span>&gt;
-&lt;<span class="azul"><abbr title="Define um nome para o field.">legend</abbr></span>&gt;Informações de contato&lt;<span class="azul">/legend</span>&gt;
-&lt;<span class="azul">form</span>&gt;
-&lt;<span class="azul">label for</span>=<span class="ama">"name"</span>&gt; Nome:&lt;<span class="azul">/label</span>&gt;
-&lt;<span class="azul">input type</span>=<span class="ama">"<abbr title="Tipo de input para o formulário">text</abbr>"</span> <span class="azul">id</span>=<span class="ama">"name"</span> <span class="azul">name</span>=<span class="ama">"name"</span>>&lt;br&gt;
-&lt;<span class="azul">label for</span>=<span class="ama">"email"</span>&gt; Email:&lt;<span class="azul">/label</span>&gt;
-&lt;<span class="azul">input type</span>=<span class="ama">"email"</span> <span class="azul">id</span>=<span class="ama">"email"</span> <span class="azul">email</span>=<span class="ama">"email"</span>>&lt;br&gt;            
-&lt;<span class="azul">textarea name</span>=<span class="ama">"comentarios"</span> <span class="azul">id</span>=<span class="ama">"comentarios"</span> <span class="azul"><abbr title="Quantidade de linhas">rows</abbr></span>="4" <span class="azul"><abbr title="Quantidade de colunas"> cols</abbr></span>="50" <span class="azul">
-<abbr title="Texto alternativo que aparece na caixa de diálogo.">placeholder</abbr></span>=<span class="ama">"Digite aqui seus comentários...."</span>&gt;&lt;<span class="azul">/textarea</span>&gt; &lt;<span class="azul">br</span>&gt;
-&lt;<span class="azul">button</span> <span style="color:blueviolet"><abbr title="Código em JavaScript">onclick="alert('Feedback Enviado')"</abbr></span>&gt;Envie seu Feedback&lt;<span class="azul">/button</span>&gt;               
-&lt;<span class="azul">/form</span>&gt;
-&lt;<span class="azul">/fieldset</span>&gt;
-            </pre>
-        </code>
-    </section>
-<p>O resultado que deve ser exibido assim:</p>
-
-    <fieldset>
-    <legend>Informações de contato</legend>
-        <form>
-            <label for="name"> Nome:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email"> Email:</label>
-            <input type="email" id="email" name="email"> <br>
-            <label for="comentarios">Comentários:</label> <br>
-            <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários...."></textarea> <br>
-            <button onclick="alert('Feedback Enviado')">Envie seu Feedback</button>             
-        </form>
-    </fieldset>            			
-<br>
-
-    <section class="code-html">
-        <h3><span style="font-weight: bold; color: rgb(228, 228, 236); font-size: 2rem;">INPUT TYPES</span> (tipos de input) no HTML</h3>
-            <ul>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"text"</span>&gt; <input type="text" placeholder="Seu texto aqui"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"password"</span>&gt;
-                <input type="password" placeholder="Digite sua senha aqui"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"radio"</span>&gt; <input type="radio"><input type="radio"><input type="radio"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"number"</span>&gt; <input type="number" placeholder="digite um número"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"image"</span>&gt; <input type="image"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"checkbox"</span>&gt; <input type="checkbox"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"button"</span>&gt; <input style="height: 20px; width: 30px;" type="button"> <label for="button">clique aqui</label></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"color"</span>&gt; <input type="color"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"email"</span>&gt; <input type="email"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"file"</span>&gt; <input type="file"></li>
-                <li>&lt;<span class="azul">input type</span> =<span class="ama">"hidden"</span>&gt; <input type="hidden"> <label for="hidden"> clique aqui</label></li>
-            </ul>
-    </section>
 </div>
 
 <!--links-->
@@ -1636,6 +1572,72 @@ todos os itens*/</span>
         <div class="bloco-3">9</div>
         <div class="bloco-1">10</div>
     </span>
+    </section>
+</div>
+
+<!--Formulários-->
+
+<div id="formularios">
+    <!--Formulários-->
+
+    <h2>Formulários</h2>
+
+    <p>A tag para formulários é a tag <span class="azul">&lt;form&gt;</span></p>
+    <ul>
+        <li>Input: é para o botão;</li>
+        <li>Label: é para o que está escrito</li>
+    </ul>
+
+    <section class="code-html">
+        <code>
+            <pre>
+&lt;<span class="azul"><abbr title="Define uma área ao redor do formuário">fieldset</abbr></span>&gt;
+&lt;<span class="azul"><abbr title="Define um nome para o field.">legend</abbr></span>&gt;Informações de contato&lt;<span class="azul">/legend</span>&gt;
+&lt;<span class="azul">form</span>&gt;
+&lt;<span class="azul">label for</span>=<span class="ama">"name"</span>&gt; Nome:&lt;<span class="azul">/label</span>&gt;
+&lt;<span class="azul">input type</span>=<span class="ama">"<abbr title="Tipo de input para o formulário">text</abbr>"</span> <span class="azul">id</span>=<span class="ama">"name"</span> <span class="azul">name</span>=<span class="ama">"name"</span>>&lt;br&gt;
+&lt;<span class="azul">label for</span>=<span class="ama">"email"</span>&gt; Email:&lt;<span class="azul">/label</span>&gt;
+&lt;<span class="azul">input type</span>=<span class="ama">"email"</span> <span class="azul">id</span>=<span class="ama">"email"</span> <span class="azul">email</span>=<span class="ama">"email"</span>>&lt;br&gt;            
+&lt;<span class="azul">textarea name</span>=<span class="ama">"comentarios"</span> <span class="azul">id</span>=<span class="ama">"comentarios"</span> <span class="azul"><abbr title="Quantidade de linhas">rows</abbr></span>="4" <span class="azul"><abbr title="Quantidade de colunas"> cols</abbr></span>="50" <span class="azul">
+<abbr title="Texto alternativo que aparece na caixa de diálogo.">placeholder</abbr></span>=<span class="ama">"Digite aqui seus comentários...."</span>&gt;&lt;<span class="azul">/textarea</span>&gt; &lt;<span class="azul">br</span>&gt;
+&lt;<span class="azul">button</span> <span style="color:blueviolet"><abbr title="Código em JavaScript">onclick="alert('Feedback Enviado')"</abbr></span>&gt;Envie seu Feedback&lt;<span class="azul">/button</span>&gt;               
+&lt;<span class="azul">/form</span>&gt;
+&lt;<span class="azul">/fieldset</span>&gt;
+            </pre>
+        </code>
+    </section>
+<p>O resultado que deve ser exibido assim:</p>
+
+    <fieldset>
+    <legend>Informações de contato</legend>
+        <form>
+            <label for="name"> Nome:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email"> <br>
+            <label for="comentarios">Comentários:</label> <br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários...."></textarea> <br>
+            <button onclick="alert('Feedback Enviado')">Envie seu Feedback</button>             
+        </form>
+    </fieldset>            			
+<br>
+
+    <section class="code-html">
+        <h3><span style="font-weight: bold; color: rgb(228, 228, 236); font-size: 2rem;">INPUT TYPES</span> (tipos de input) no HTML</h3>
+            <ul>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"text"</span>&gt; <input type="text" placeholder="Seu texto aqui"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"password"</span>&gt;
+                <input type="password" placeholder="Digite sua senha aqui"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"radio"</span>&gt; <input type="radio"><input type="radio"><input type="radio"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"number"</span>&gt; <input type="number" placeholder="digite um número"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"image"</span>&gt; <input type="image"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"checkbox"</span>&gt; <input type="checkbox"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"button"</span>&gt; <input style="height: 20px; width: 30px;" type="button"> <label for="button">clique aqui</label></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"color"</span>&gt; <input type="color"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"email"</span>&gt; <input type="email"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"file"</span>&gt; <input type="file"></li>
+                <li>&lt;<span class="azul">input type</span> =<span class="ama">"hidden"</span>&gt; <input type="hidden"> <label for="hidden"> clique aqui</label></li>
+            </ul>
     </section>
 </div>
 
