@@ -1586,22 +1586,43 @@ todos os itens*/</span>
     <ul>
         <li>Input: é para o botão;</li>
         <li>Label: é para o que está escrito</li>
+        <li>Para criar o botão de enviar use:
+            <section class="code-html">
+                <code>
+                    <pre>
+&lt;<span class="azul">input type</span>=<span class="ama">"submit"</span> <span class="azul">value</span>=<span class="ama">"Enviar"</span>&gt;
+<input type="submit" value="Enviar">
+                    </pre>
+                </code>
+            </section>
+        </li>
+        <li>Para criar um botão para limpar o formulário:
+            <section class="code-html">
+                <code>
+                    <pre>
+&lt;<span class="azul">input type</span>=<span class="ama">"reset"</span> <span class="azul">value</span>=<span class="ama">"Limpar"</span>&gt;
+<input type="reset" value="Limpar">
+                    </pre>
+                </code>
+            </section>
+
+        </li>
     </ul>
 
     <section class="code-html">
         <code>
             <pre>
 &lt;<span class="azul"><abbr title="Define uma área ao redor do formuário">fieldset</abbr></span>&gt;
-&lt;<span class="azul"><abbr title="Define um nome para o field.">legend</abbr></span>&gt;Informações de contato&lt;<span class="azul">/legend</span>&gt;
-&lt;<span class="azul">form</span>&gt;
-&lt;<span class="azul">label for</span>=<span class="ama">"name"</span>&gt; Nome:&lt;<span class="azul">/label</span>&gt;
-&lt;<span class="azul">input type</span>=<span class="ama">"<abbr title="Tipo de input para o formulário">text</abbr>"</span> <span class="azul">id</span>=<span class="ama">"name"</span> <span class="azul">name</span>=<span class="ama">"name"</span>>&lt;br&gt;
-&lt;<span class="azul">label for</span>=<span class="ama">"email"</span>&gt; Email:&lt;<span class="azul">/label</span>&gt;
-&lt;<span class="azul">input type</span>=<span class="ama">"email"</span> <span class="azul">id</span>=<span class="ama">"email"</span> <span class="azul">email</span>=<span class="ama">"email"</span>>&lt;br&gt;            
-&lt;<span class="azul">textarea name</span>=<span class="ama">"comentarios"</span> <span class="azul">id</span>=<span class="ama">"comentarios"</span> <span class="azul"><abbr title="Quantidade de linhas">rows</abbr></span>="4" <span class="azul"><abbr title="Quantidade de colunas"> cols</abbr></span>="50" <span class="azul">
-<abbr title="Texto alternativo que aparece na caixa de diálogo.">placeholder</abbr></span>=<span class="ama">"Digite aqui seus comentários...."</span>&gt;&lt;<span class="azul">/textarea</span>&gt; &lt;<span class="azul">br</span>&gt;
-&lt;<span class="azul">button</span> <span style="color:blueviolet"><abbr title="Código em JavaScript">onclick="alert('Feedback Enviado')"</abbr></span>&gt;Envie seu Feedback&lt;<span class="azul">/button</span>&gt;               
-&lt;<span class="azul">/form</span>&gt;
+    &lt;<span class="azul"><abbr title="Define um nome para o field.">legend</abbr></span>&gt;Informações de contato&lt;<span class="azul">/legend</span>&gt;
+    &lt;<span class="azul">form</span>&gt;
+        &lt;<span class="azul">label for</span>=<span class="ama">"name"</span>&gt; Nome:&lt;<span class="azul">/label</span>&gt;
+        &lt;<span class="azul">input type</span>=<span class="ama">"<abbr title="Tipo de input para o formulário">text</abbr>"</span> <span class="azul">id</span>=<span class="ama">"name"</span> <span class="azul">name</span>=<span class="ama">"name"</span>>&lt;br&gt;
+        &lt;<span class="azul">label for</span>=<span class="ama">"email"</span>&gt; Email:&lt;<span class="azul">/label</span>&gt;
+        &lt;<span class="azul">input type</span>=<span class="ama">"email"</span> <span class="azul">id</span>=<span class="ama">"email"</span> <span class="azul">email</span>=<span class="ama">"email"</span>>&lt;br&gt;            
+        &lt;<span class="azul">textarea name</span>=<span class="ama">"comentarios"</span> <span class="azul">id</span>=<span class="ama">"comentarios"</span> <span class="azul"><abbr title="Quantidade de linhas">rows</abbr></span>="4" <span class="azul"><abbr title="Quantidade de colunas"> cols</abbr></span>="50" <span class="azul">
+        <abbr title="Texto alternativo que aparece na caixa de diálogo.">placeholder</abbr></span>=<span class="ama">"Digite aqui seus comentários...."</span>&gt;&lt;<span class="azul">/textarea</span>&gt; &lt;<span class="azul">br</span>&gt;
+        &lt;<span class="azul">button</span> <span style="color:blueviolet"><abbr title="Código em JavaScript">onclick="alert('Feedback Enviado')"</abbr></span>&gt;Envie seu Feedback&lt;<span class="azul">/button</span>&gt;               
+    &lt;<span class="azul">/form</span>&gt;
 &lt;<span class="azul">/fieldset</span>&gt;
             </pre>
         </code>
@@ -1639,6 +1660,28 @@ todos os itens*/</span>
                 <li>&lt;<span class="azul">input type</span> =<span class="ama">"hidden"</span>&gt; <input type="hidden"> <label for="hidden"> clique aqui</label></li>
             </ul>
     </section>
+
+    <p>Existem 2 métodos de envio:</p>
+    <ul>
+        <li><span class="ama">GET</span>: Para dados não sensíveis, tipo nome, idade, peso, e etc.</li>
+        <li><span class="ama">POST</span>: para dados sensíveis, tipo senha, número de cartão de crédito entre outros.</li>
+    </ul>
+
+    <section class="code-html">
+        <code>
+            <pre>
+&lt;<span class="azul">form <abbr title="script para enviar o formulário">action</abbr></span>=<span class="ama">"formulário para envio"</span> <span class="azul"><abbr title="Para definir o método de envio">method</abbr></span>=<span class="ama">"post ou get"</span> <span class="azul"><abbr title="para autocompletar o formulário">autocomplete</abbr></span>=<span class="ama">"on ou off"</span>&gt;
+            </pre>
+        </code>
+    </section>
+
+    <h2>Atributos</h2>
+    <ul>
+        <li><span class="ama">required</span>: Para ser obrigatório colocar algum dado.</li>
+        <li><span class="ama">minlength <span style="color: black;">ou</span> maxlength</span>: Para definir o mínimo ou o máximo de caracteres.</li>
+        <li><span class="ama">size="número de caracteres"</span>: Para definir a quantidade de caracteres que serão exibidos na tela.</li>
+        <li><span class="ama">placeholder"descrição"</span>Para exibir uma descrição na caixa.</li>
+    </ul>
 </div>
 
 <script src="script.js"></script>
