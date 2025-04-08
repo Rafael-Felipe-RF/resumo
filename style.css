@@ -21,7 +21,7 @@
 
 }
 
-
+@media screen and(min-width: 999px){
 *{
     margin: 0;
     padding: 0;
@@ -350,3 +350,4 @@ code{
         
 }
 
+}

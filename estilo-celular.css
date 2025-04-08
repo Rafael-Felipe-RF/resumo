@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+:root{
+	--cor1: #282C34; /*cor de fundo Vs code*/
+	--cor2: #7db5e4; /*Azul VS Code*/
+	--cor3: #df8181; /*Vermelho VS code*/
+	--cor4: #c4b37d; /*Amarelo VS code*/
+	--cor5: #A769BC; /*Rosa VS code*/
+	--cor6: #e9bd5f; /*Verde VS code*/
+	--cor7: #87B622;
+	--cor8: #638B3A;
+	--cor9: #f6aa90;
+
+    /*cores do site*/
+
+    --cor10: #f4f5ad17;
+    --cor11: #493A70;
+    --cor12: #cdd199;
+
+}
+
+
+@media screen and (max-width: 999px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .ama{
+        color: var(--cor3);
+    }
+    
+    .azul{
+        color: var(--cor2);
+    }
+    
+    .rosa{
+        color: var(--cor5);
+    }
+    
+    .ame{
+        color: var(--cor6);
+    }
+    
+    .lim{
+        color: #87B622;
+    
+    }
+
+}
